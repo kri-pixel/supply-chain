@@ -79,6 +79,7 @@ function AssignRoles() {
 
     const handleRoleSubmit = async (event) => {
         event.preventDefault();
+        
         const { address, name, place, type } = newRole;
         try {
             let receipt;
