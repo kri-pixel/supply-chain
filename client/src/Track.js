@@ -103,8 +103,8 @@ function Track() {
         return (
             <div className="container-xl">
                 <article className="col-4">
-                    <h3><b><u>Battery:</u></b></h3>
-                    <span><b>Battery ID: </b>{MED[ID].id}</span>
+                    <h3><b><u>Medicine:</u></b></h3>
+                    <span><b>Medicine ID: </b>{MED[ID].id}</span>
                     <br />
                     <span><b>Name:</b> {MED[ID].name}</span>
                     <br />
@@ -161,8 +161,8 @@ function Track() {
         return (
             <div className="container-xl">
                 <article className="col-4">
-                    <h3><b><u>Battery:</u></b></h3>
-                    <span><b>Battery ID: </b>{MED[ID].id}</span>
+                    <h3><b><u>Medicine:</u></b></h3>
+                    <span><b>Medicine ID: </b>{MED[ID].id}</span>
                     <br />
                     <span><b>Name:</b> {MED[ID].name}</span>
                     <br />
@@ -215,8 +215,8 @@ function Track() {
         return (
             <div className="container-xl">
                 <article className="col-4">
-                    <h3><b><u>Battery:</u></b></h3>
-                    <span><b>Battery ID: </b>{MED[ID].id}</span>
+                    <h3><b><u>Medicine:</u></b></h3>
+                    <span><b>Medicine ID: </b>{MED[ID].id}</span>
                     <br />
                     <span><b>Name:</b> {MED[ID].name}</span>
                     <br />
@@ -262,8 +262,8 @@ function Track() {
         return (
             <div className="container-xl">
                 <article className="col-4">
-                    <h3><b><u>Battery:</u></b></h3>
-                    <span><b>Battery ID: </b>{MED[ID].id}</span>
+                    <h3><b><u>Medicine:</u></b></h3>
+                    <span><b>Medicine ID: </b>{MED[ID].id}</span>
                     <br />
                     <span><b>Name:</b> {MED[ID].name}</span>
                     <br />
@@ -302,8 +302,8 @@ function Track() {
         return (
             <div className="container-xl">
                 <article className="col-4">
-                    <h3><b><u>Battery:</u></b></h3>
-                    <span><b>Battery ID: </b>{MED[ID].id}</span>
+                    <h3><b><u>Medicine:</u></b></h3>
+                    <span><b>Medicine ID: </b>{MED[ID].id}</span>
                     <br />
                     <span><b>Name:</b> {MED[ID].name}</span>
                     <br />
@@ -332,19 +332,19 @@ function Track() {
         )
     }
     if (TrackTillOrdered) {
-      const batteryData = {
+      const MedicineData = {
         id: MED[ID]?.id,
         name: MED[ID]?.name,
         description: MED[ID]?.description,
         currentStage: MedStage[ID]
       };
 
-      const batteryDataString = JSON.stringify(batteryData);
+      const MedicineDataString = JSON.stringify(MedicineData);
         return (
             <div className="container-xl">
                 <article className="col-4">
-                    <h3><b><u>Battery:</u></b></h3>
-                    <span><b>Battery ID: </b>{MED[ID].id}</span>
+                    <h3><b><u>Medicine:</u></b></h3>
+                    <span><b>Medicine ID: </b>{MED[ID].id}</span>
                     <br />
                     <span><b>Name:</b> {MED[ID].name}</span>
                     <br />
@@ -353,7 +353,7 @@ function Track() {
                     <span><b>Current stage: </b>{MedStage[ID]}</span>
                     <hr />
                     <br />
-                    <h5>Battery Not Yet Processed...</h5>
+                    <h5>Medicine Not Yet Processed...</h5>
                     <button onClick={() => {
                         showTrackTillOrdered(false);
                     }} className="btn btn-outline-success btn-sm">Track Another Item</button>
@@ -361,19 +361,6 @@ function Track() {
                         history.push('/')
                     }} className="btn btn-outline-danger btn-sm"> HOME</span>
                 </article>
-                {/* <section className="row">
-                   
-                    <article className="col-3">
-                        <h4><u>Raw Materials Supplied by:</u></h4>
-                        <p><b>Supplier ID: </b>{RMS[MED[ID].RMSid].id}</p>
-                        <p><b>Name:</b> {RMS[MED[ID].RMSid].name}</p>
-                        <p><b>Place: </b>{RMS[MED[ID].RMSid].place}</p>
-                    </article>
-                </section> */}
-                <div className="qr-code-container">
-                    <h4>QR Code:</h4>
-                    <QRCodeCanvas value={batteryDataString} />
-                </div>
             </div >
 
 
@@ -389,7 +376,7 @@ function Track() {
         event.preventDefault();
         var ctr = await SupplyChain.methods.medicineCtr().call();
         if (!((ID > 0) && (ID <= ctr)))
-            alert("Invalid Battery ID!!!");
+            alert("Invalid Medicine ID!!!");
         else {
             // eslint-disable-next-line
             if (MED[ID].stage == 5)
@@ -419,7 +406,7 @@ function Track() {
             <table className="table table-sm table-bordered">
                 <thead>
                     <tr>
-                        <th scope="col">Battery ID</th>
+                        <th scope="col">Medicine ID</th>
                         <th scope="col">Name</th>
                         <th scope="col">Description</th>
                         <th scope="col">Current Processing Stage</th>
@@ -442,10 +429,10 @@ function Track() {
                     })}
                 </tbody>
             </table>
-            <h5>Enter Battery ID to Track it</h5>
+            <h5>Enter Medicine ID to Track it</h5>
 
             <form onSubmit={handlerSubmit}>
-                <input className="form-control-sm" type="text" onChange={handlerChangeID} placeholder="Enter Battery ID" required />
+                <input className="form-control-sm" type="text" onChange={handlerChangeID} placeholder="Enter Medicine ID" required />
                 <button className="btn btn-outline-success btn-sm" onSubmit={handlerSubmit}>Track</button>
             </form>
         </div>
