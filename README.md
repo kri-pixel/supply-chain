@@ -1,23 +1,29 @@
 # Supply Chain Management
 
+[![Node.js](https://img.shields.io/badge/Node.js-v14%2B-green)](https://nodejs.org/en/about)
+[![React.js](https://img.shields.io/badge/React.js-Framework-lightblue)](https://react.dev/)
+[![Solidity](https://img.shields.io/badge/Smart%20Contract-Solidity-orange)](https://soliditylang.org/)
+[![MetaMask](https://img.shields.io/badge/Wallet-MetaMask-lightgrey)](https://metamask.io/)
+[![Ganache](https://img.shields.io/badge/TestNet-Ganache-red)](https://metamask.io/)
+[![Truffle](https://img.shields.io/badge/Deployment-Truffle-purple)](https://archive.trufflesuite.com/docs/truffle/how-to/install/)
+
 ## Description
 Supply chain is always hard to manage and requires a lot of admistrative machinery. However, when managed with smart contracts using blockchain, a lot of the paperwork is reduced.
 Also it leads to an increase in the transparency and helps to build an efficient Root of Trust. Supply-chain-dapp is such an implementation of a supply chain management system which uses blockchain to ensure a transparent and secure transfer of product from the manufacturer to the customer via the online e-commerce websites. 
 ## Architecture
 The smart contract is being written with Solidity which is then compiled, migrated and deployed using Truffle.js on the Gode Testnet blockchain network.The frontend uses Web3.js to communicate with the smart contract and Gode Testnet blockchain network and Meta Musk Wallet is connect to Gode Test Network to do Transaction between each component in Supply .
 ****
-![https://raw.githubusercontent.com/faizack619/Supply-Chain-Gode-Blockchain/master/client/public/Blank%20diagram.png](https://raw.githubusercontent.com/faizack619/Supply-Chain-Gode-Blockchain/master/client/public/Blank%20diagram.png)
+![architecture-supplu-chain](https://github.com/user-attachments/assets/0474b4e5-f2e0-4697-965f-cbad1980d832)
+
 
 ## Supply Chain Flow
 
-
-![[https://cdn.vectorstock.com/i/1000x1000/35/51/diagram-of-supply-chain-management-vector-41743551.webp](https://cdn.vectorstock.com/i/1000x1000/35/51/diagram-of-supply-chain-management-vector-41743551.webp)](https://cdn-wordpress-info.futurelearn.com/info/wp-content/uploads/8d54ad89-e86f-4d7c-8208-74455976a4a9-2-768x489.png)
+![supply-chain-flow](https://github.com/user-attachments/assets/4c078b4c-cef5-4a59-a74d-925bab0b0d54)
 
 
 
 ## Smart Contract Working Flow
 
-![https://raw.githubusercontent.com/faizack619/Supply-Chain-Gode-Blockchain/master/client/public/Supply%20Chain%20Design%20(1).png?token=GHSAT0AAAAAAB52SPAT5YHI3AALNPFXL27AY7OU3IQ](https://raw.githubusercontent.com/faizack619/Supply-Chain-Gode-Blockchain/master/client/public/Supply%20Chain%20Design%20(1).png?token=GHSAT0AAAAAAB52SPAT5YHI3AALNPFXL27AY7OU3IQ)
 
 This is a SupplyChain smart contract written in Solidity. The contract models the various roles and stages involved in the supply chain of a pharmaceutical product.
 
@@ -49,7 +55,7 @@ Overall, this smart contract provides a way to track the various stages of a pha
 ## Create, Compile & Deploy Smart Contract. 
 
 * Open VScode and open VScode Terimal by Ctrl + ' .
-* **Clone Project** Type the following command and press Enter : git clone : ` https://github.com/faizack619/Supply-Chain-Blockchain.git  
+* **Clone Project** Type the following command and press Enter : git clone : `https://github.com/kri-pixel/supply-chain.git`
 * **Install truffle** : Type the following command and press Enter: `npm install -g truffle`
 * **Install dependencies** : Type the following command and press Enter: `npm i`
 * **File structure for  DApp** : 
@@ -74,7 +80,7 @@ Overall, this smart contract provides a way to track the various stages of a pha
 
     * Open Ganache and create new WorkSpace. Copy Rpc Server Address.
 
-    * ![https://miro.medium.com/max/1248/1*4rzNT0muOXelP22Ky9178g.png](https://miro.medium.com/max/1248/1*4rzNT0muOXelP22Ky9178g.png)
+    * ![ganache-demo](https://github.com/user-attachments/assets/ebbf1bf5-3bde-4bcd-9086-46c42fc6a9d9)
 
     * The RPC server is used to allow applications to communicate with the Ethereum blockchain and execute smart contract transactions, query the state of the blockchain, and interact with the Ethereum network.
 
@@ -106,13 +112,13 @@ Overall, this smart contract provides a way to track the various stages of a pha
 ### Step 4.
 ## Connect Meta Musk with Ganache. 
 
-![https://media.licdn.com/dms/image/C4D12AQHMatPDpLjwkA/article-cover_image-shrink_720_1280/0/1547586411238?e=2147483647&v=beta&t=UDYOS05BSkdrYoGOR5LW7v2uHz1Sca5uNzzWLrQG1nk](https://media.licdn.com/dms/image/C4D12AQHMatPDpLjwkA/article-cover_image-shrink_720_1280/0/1547586411238?e=2147483647&v=beta&t=UDYOS05BSkdrYoGOR5LW7v2uHz1Sca5uNzzWLrQG1nk)
+![connect-metamask](https://github.com/user-attachments/assets/c2177ea7-77b7-4189-8c6a-01bfb0a87f41)
 1. Start Ganache: Start the Ganache application and make note of the RPC server URL and port number.
 
 1. Connect MetaMask: Open MetaMask in your browser and click on the network dropdown in the top-right corner.
-![https://kimsereylam.com/assets/posts/2022-02-25-setup-local-development-blockchain-with-ganache/ganache_network.png](https://kimsereylam.com/assets/posts/2022-02-25-setup-local-development-blockchain-with-ganache/ganache_network.png) 
+![metamask-demo](https://github.com/user-attachments/assets/e1895e1b-7a46-447d-97b6-03ebfc5fd9d6)
 1. Select "Custom RPC" and enter the RPC server URL and port number for your Ganache instance. Click "Save".
 
 1. Import an account: In Ganache, click on the "Accounts" tab and select the first account listed. Click on the "Copy" button next to the "Private Key" field copy the private key.
-     ![https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoSc_d4naUQwI8qo8ClC1NXa4aJA7blvrgn4Xq1looUOiWY3wTGd5x8g5fgCrMzyrOzQ8&usqp=CAUto](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoSc_d4naUQwI8qo8ClC1NXa4aJA7blvrgn4Xq1looUOiWY3wTGd5x8g5fgCrMzyrOzQ8&usqp=CAU)
+     ![import-ganache](https://github.com/user-attachments/assets/f9812664-dfcd-45fa-9913-b575ec722ccd)
  2. In MetaMask, click on the three dots in the top-right corner, select "Import Account", and paste the private key into the private key field. Click "Import".
