@@ -11,7 +11,7 @@
 Supply chain is always hard to manage and requires a lot of admistrative machinery. However, when managed with smart contracts using blockchain, a lot of the paperwork is reduced.
 Also it leads to an increase in the transparency and helps to build an efficient Root of Trust. Supply-chain-dapp is such an implementation of a supply chain management system which uses blockchain to ensure a transparent and secure transfer of product from the manufacturer to the customer via the online e-commerce websites. 
 ## Architecture
-The smart contract is being written with Solidity which is then compiled, migrated and deployed using Truffle.js on the Gode Testnet blockchain network.The frontend uses Web3.js to communicate with the smart contract and Gode Testnet blockchain network and Meta Musk Wallet is connect to Gode Test Network to do Transaction between each component in Supply .
+The smart contract is being written with Solidity which is then compiled, migrated and deployed using Truffle.js on the Ganache Testnet blockchain network.The frontend uses Web3.js to communicate with the smart contract and Ganache Testnet blockchain network and Meta Musk Wallet is connect to Ganache Test Network to do Transaction between each component in Supply .
 ****
 ![architecture-supplu-chain](https://github.com/user-attachments/assets/0474b4e5-f2e0-4697-965f-cbad1980d832)
 
